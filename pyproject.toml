@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infinity-faction-visualiser"
+version = "0.1.0"
+description = "GUI tool to visualise Infinity faction spread"
+requires-python = ">=3.10"
+readme = "README.md"
+
+authors = [
+    { name = "mrB4ggins" }
+]
+
+
+dependencies = [
+    "matplotlib>=3.8",
+    "pandas>=2.0"
+]
+
+[project.optional-dependencies]
+build = [
+    "pyinstaller>=6.0"
+]
+
+[tool.setuptools]
+packages = []
