@@ -1,0 +1,22 @@
+
+{
+	"name": "Python 3",
+
+	"image": "mcr.microsoft.com/devcontainers/python:2-3.14-trixie",
+
+	"postCreateCommand": "${containerWorkspaceFolder}/.venv/bin/python -m pip install .[build]",
+
+	"containerEnv": {
+        "DEBIAN_FRONTEND": "noninteractive"
+    },
+
+	"customizations": {
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "${containerWorkspaceFolder}/.venv/bin/python"
+            }
+        }
+    }
+
+
+}
