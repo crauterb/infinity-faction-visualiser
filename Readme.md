@@ -2,7 +2,9 @@
 
 Yes, there was no shorter name available.
 
-This is just a quick-and-dirty tool to allow for the Infinity Community/Tournament Organisers to use my way of plotting the Faction Spread for their tournaments. 
+This is just a quick-and-dirty tool to allow for the Infinity Community/Tournament Organisers to use my way of plotting the Faction Spread for their tournaments, like so:
+
+![Faction Spread Demo](assets/example.png)
 
 ## Download the tool 
 
