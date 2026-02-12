@@ -2,13 +2,13 @@ import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 import pathlib
 
-from models import (
+from infinity_faction_visualiser.models import (
     Army,
     Sectorial,
     SECTORIALS_BY_ARMY,
     FactionSpread,
 )
-from plot import FactionSpreadPlotter
+from infinity_faction_visualiser.plot import FactionSpreadPlotter
 
 
 class InfinityFactionVisualizer(tk.Tk):

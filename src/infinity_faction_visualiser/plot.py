@@ -1,7 +1,9 @@
+import matplotlib
+matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-from models import COLOR_CODING, SECTORIALS_BY_ARMY, Army, FactionSpread
+from infinity_faction_visualiser.models import COLOR_CODING, SECTORIALS_BY_ARMY, Army, FactionSpread
 
 # Ensures reproducibility of random numbers
 rng = np.random.default_rng(123)
