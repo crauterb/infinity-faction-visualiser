@@ -37,16 +37,7 @@ jobs:
       - name: Build executable (Windows)
         if: runner.os == 'Windows'
         run: |
-          pyinstaller \
-            --clean \
-            --onefile \
-            --windowed \
-            --paths src \
-            --name infinity-faction-visualiser \
-            --collect-all matplotlib \
-            --collect-all tkinter \
-            --collect-all PIL \
-            src/infinity_faction_visualiser/__main__.py
+          pyinstaller --clean --onefile --windowed --paths src --name infinity-faction-visualiser --collect-all matplotlib --collect-all PIL src/infinity_faction_visualiser/__main__.py
 
       - name: Build executable (Linux)
         if: runner.os == 'Linux'
@@ -58,7 +49,6 @@ jobs:
             --paths src \
             --name infinity-faction-visualiser \
             --collect-all matplotlib \
-            --collect-all tkinter \
             --collect-all PIL \
             src/infinity_faction_visualiser/__main__.py
 
